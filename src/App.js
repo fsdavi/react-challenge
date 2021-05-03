@@ -1,8 +1,12 @@
+import { BrowserRouter } from 'react-router-dom';
+import { Routes } from './routes';
+import './styles/global.scss';
+
 function App() {
   return (
-    <div className="App">
-      Hello World!
-    </div>
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
   );
 }
 
