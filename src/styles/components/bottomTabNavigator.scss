@@ -1,0 +1,30 @@
+.bottomTabNav-container {
+  width: 375px;
+  height: 63px;
+  background: #FFFFFF;
+
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+
+  button {
+    background: none;
+    border: none;
+
+    img {
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #BFBEBF;
+    }
+  }
+
+  .bottomTabNav-activated {
+    color: #000000;
+  }
+ 
+}
