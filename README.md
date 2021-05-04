@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+<h3 align="center">
+  ReactJS Application for Foton Challenge
+</h3>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/fsdavi/foton-challenge?color=blueviolet">
 
-## Available Scripts
+  <a href="https://www.linkedin.com/in/davisfreire/" target="_blank" rel="noopener noreferrer">
+    <img alt="Made by" src="https://img.shields.io/badge/made%20by-Davi%20Freire-blueviolet">
+  </a>
 
-In the project directory, you can run:
+  <a href="https://github.com/fsdavi/foton-challenge/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/fsdavi/foton-challenge?color=blueviolet">
+  </a>
 
-### `yarn start`
+  <a href="https://github.com/fsdavi/gobarber-web/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/fsdavi/foton-challenge?color=blueviolet">
+  </a>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  <img alt="GitHub" src="https://img.shields.io/github/license/fsdavi/foton-challenge?color=blueviolet">
+</p>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<p align="center">
+  <a href="#%EF%B8%8F-about-the-project">About the project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-getting-started">Getting started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+</p>
 
-### `yarn test`
+</br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p align="center">
+  <img alt="Layout" src=".github/showing.gif">
+</p>
 
-### `yarn build`
+## 💇🏻‍♂️ About the project
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Project developed for the foton challenge front-end. I had to reproduce the proposed layout and increase it using the google book API.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+👨‍🎨 [Layout - Figma](https://www.figma.com/file/KFElqzD983WNyvMY1SaF0c/book-app?node-id=0%3A1)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+👨‍💻 [Project - Vercel](https://foton-challenge.vercel.app/)
 
-### `yarn eject`
+##
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 🚀 Technologies
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Technologies that I used to develop this web client
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- [ReactJS](https://reactjs.org/)
+- [create-react-app](https://github.com/facebook/create-react-app)
+- [React Router DOM](https://reacttraining.com/react-router/)
+- [Axios](https://github.com/axios/axios)
+- [SCSS](https://sass-lang.com/)
+- [Vercel](https://vercel.com)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 💻 Getting started
 
-## Learn More
+**Clone the project and access the folder**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+$ git clone https://github.com/fsdavi/foton-challeng.git && cd foton-challenge
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Follow the steps below**
 
-### Code Splitting
+```bash
+# Install the dependencies
+$ npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Start the client
+$ npm start
+```
 
-### Analyzing the Bundle Size
+## 🤔 How to contribute
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+**Make a fork of this repository**
 
-### Making a Progressive Web App
+```bash
+# Fork using GitHub official command line
+# If you don't have the GitHub CLI, use the web site to do that.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+$ gh repo fork fsdavi/foton-challenge
+```
 
-### Advanced Configuration
+**Follow the steps below**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+# Clone your fork
+$ git clone your-fork-url && cd foton-challenge
 
-### Deployment
+# Create a branch with your feature
+$ git checkout -b my-feature
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# Make the commit with your changes
+$ git commit -m 'feat: My new feature'
 
-### `yarn build` fails to minify
+# Send the code to your remote branch
+$ git push origin my-feature
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+After your pull request is merged, you can delete your branch
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+Made with 💜 by Davi Freire 👋 [See my linkedin](https://www.linkedin.com/in/davisfreire/)
