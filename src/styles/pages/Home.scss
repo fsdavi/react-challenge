@@ -6,6 +6,19 @@
   padding-left: 20px;
   padding-right: 20px;
 
+  h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #3F4043;
+  }
+  
+  button {
+    color: #4ABDF1;
+    border: none;
+    background: none;
+    outline: none;
+  }
+
   .pageHome-welcomeContainer {
     display: flex;
     align-items: center;
@@ -33,18 +46,7 @@
       margin-bottom: 15px;
       max-width: 335px;
 
-      h2 {
-        font-size: 18px;
-        font-weight: 400;
-        color:#3F4043;
-      }
 
-      button {
-        color: #4ABDF1;
-        border: none;
-        background: none;
-        outline: none;
-      }
     }
 
     .pageHome-discoverCarousel{
@@ -62,18 +64,7 @@
       justify-content: space-between;
       margin-bottom: 15px;
 
-      h2 {
-        font-size: 18px;
-        font-weight: 400;
-        color:#3F4043;
-      }
 
-      button {
-        color: #4ABDF1;
-        border: none;
-        background: none;
-        outline: none;
-      }
     }
 
     .pageHome-currentlyReadingCard {
@@ -139,6 +130,75 @@
             margin: 0 2px 0 2px;
           }
         }
+      }
+    }
+  }
+
+  .pageHome-reviewsOfTheDays {
+    width: 100%;
+    margin-bottom: 20px;
+    .pageHome-reviewsOfTheDaysTitle {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      margin-bottom: 15px;
+    }
+
+    .pageHome-reviewsOfTheDaysCard {
+      background: #FFFFFF;
+      box-shadow: 0px 2px 4px rgba(229, 229, 229, 0.5);
+      border-radius: 5px;
+
+      div {
+        width: 100%;
+        padding: 15px 12px;
+
+        h2 {
+          font-family: SF Pro Display;
+          font-weight: bold;
+          font-size: 12px;
+          line-height: 14px;
+
+          color: rgba(49, 49, 49, 0.8);
+        }
+      }
+
+      .pageHome-reviewsOfTheDaysCardInfoContainer {
+        padding: 6px 0px;
+        
+        font-family: Roboto;
+        font-weight: normal;
+        font-size: 8px;
+        line-height: 9px;
+
+        color: rgba(106, 103, 103, 0.8);
+
+        display: flex;
+        align-self: flex-start;
+        gap: 22px;
+
+        ul {
+          display: flex;
+
+          ::marker {
+            color: #6A6767;
+          }
+
+          > li {
+            margin-right: 16px;
+          }
+        }
+      }
+
+      p {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 12px;
+
+        color: rgba(107, 107, 107, 0.8);
       }
     }
   }
