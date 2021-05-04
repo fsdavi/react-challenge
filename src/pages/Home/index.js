@@ -3,8 +3,9 @@ import { SearchField } from '../../components/SearchField';
 import { DiscoverCard } from '../../components/DiscoverCard';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import BookImgMock from '../../assets/DELETAR-MOCK2.svg';
+import BookImgMock from '../../assets/mock-book2.svg';
 import MarkedBookIcon from '../../assets/marked-book-icon.svg';
+import ThumbReviewMock from '../../assets/mock-reviewThumb.svg';
 
 import 'swiper/swiper.scss';
 import '../../styles/pages/Home.scss';
@@ -27,9 +28,8 @@ export const Home = () => {
           </div>
           <div className="pageHome-discoverCarousel">
             <Swiper
-              spaceBetween={10}
+              spaceBetween={5}
               slidesPerView={1.2}
-              onSwiper={(swiper) => console.log(swiper)}
             >
               <SwiperSlide> <DiscoverCard /> </SwiperSlide>
               <SwiperSlide> <DiscoverCard /> </SwiperSlide>
@@ -65,16 +65,25 @@ export const Home = () => {
         </div>
 
         <div className="pageHome-reviewsOfTheDays">
-          <div className="pageHome-reviewsOfTheDays">
+          <div className="pageHome-reviewsOfTheDaysTitle">
             <h2>Reviews of The Days</h2>
             <button>
               All Video
-          </button>
+            </button>
           </div>
 
-          <div className="pageHome-currentlyReadingCard">
+          <div className="pageHome-reviewsOfTheDaysCard">
+            <img src={ThumbReviewMock} />
             <div>
-              {/* <img /> */}
+              <h2>Don't Make Me Think - Steve Krug</h2>
+              <div className="pageHome-reviewsOfTheDaysCardInfoContainer">
+                <p>Jesse Showalter</p>
+                <ul>
+                  <li>5.2K Views</li>
+                  <li>1 Week ago</li>
+                </ul>
+              </div>
+              <p>"Don't Make Me Think" by Steve Krug is one of the first books I read when I was getting into digital design. It helped me move from designing things that just "look nice" to designing things that are usable, useful, memorable and simple to learn and use. </p>
             </div>
           </div>
         </div>

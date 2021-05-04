@@ -51,6 +51,21 @@
 
     .pageHome-discoverCarousel{
       max-width: 375px;
+      
+      .swiper-wrapper {
+        .swiper-slide.swiper-slide-active {
+          width: 271.667px !important;
+          margin-right: 10px;
+        }
+  
+        .swiper-slide.swiper-slide-next,
+        .swiper-slide.swiper-slide-prev {
+          .discoverCard-container {
+            height: 129px;
+            margin-top: 5px;
+          }
+        }
+      }
     }
 
   }
