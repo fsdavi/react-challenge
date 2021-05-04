@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { SearchField } from '../../components/SearchField';
 import { api } from '../../services/api';
-
 import { SearchedBookContext } from '../../contexts/searchedBookContext';
 import withoutThumb from '../../assets/withoutThumb.png';
+
 import '../../styles/pages/Search.scss';
 
 export const SearchResultsPage = () => {
@@ -54,13 +55,12 @@ export const SearchResultsPage = () => {
         <div className="pageSearchResults-gridBooks">
           {books && books.map(book => (
             <div key={book.id} >
-              <a>
+              <Link to={`/details/${book?.volumeInfo?.title.replace(/\s+/g, '')}`}>
                 {book?.volumeInfo?.imageLinks?.thumbnail
                   ? (<img src={book?.volumeInfo?.imageLinks?.thumbnail} alt={book?.volumeInfo?.title} />)
                   : (<img src={withoutThumb} alt={book?.volumeInfo?.title} />)
                 }
-
-              </a>
+              </Link>
               <h1>{book.volumeInfo.title}</h1>
               <h2>by {book.volumeInfo.authors}</h2>
             </div>
