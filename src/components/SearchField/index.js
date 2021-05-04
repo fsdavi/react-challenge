@@ -1,26 +1,29 @@
 import React from 'react';
 import SearchIcon from '../../assets/search-icon.svg';
 import { useHistory } from 'react-router-dom';
-
+import { SearchedBookContext } from '../../contexts/searchedBookContext';
 import '../../styles/components/searchField.scss';
 
 export const SearchField = () => {
   const history = useHistory();
-
+  const { handleChangeSearchedBook } = React.useContext(SearchedBookContext);
   const [dataToSearch, setDataToSearch] = React.useState('');
 
   const handleChangeSearchInput = event => {
     setDataToSearch(event.target.value);
   }
 
-  const handleSearchItemCLick = async () => {
-    history.push(`searchResults/${dataToSearch}`);
+  const handleSearchItemCLick = () => {
+    let dataToSearchWithouSpaces = dataToSearch.replace(/\s+/g, '');
+    console.log(dataToSearchWithouSpaces);
+    handleChangeSearchedBook(dataToSearch);
+    history.push(`/searchResults/${dataToSearchWithouSpaces}`);
   }
 
   const handleKeyDown = event => {
     if (event.key === 'Enter') {
-      console.log(dataToSearch)
-    }
+      handleSearchItemCLick();
+    };
   }
 
   return (
