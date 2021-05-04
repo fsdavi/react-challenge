@@ -1,21 +1,10 @@
 import React from 'react';
 import GraphicIcon from '../../assets/graphic-icon.svg';
-import DELETARMOCK from '../../assets/DELETAR-MOCK.svg';
+import boockMock from '../../assets/mock-book1.svg';
 
-import { api } from '../../services/api';
 import '../../styles/components/discoverCard.scss';
 
 export const DiscoverCard = () => {
-  const [cardItem, setCardItem] = React.useState();
-
-  React.useEffect(() => {
-    const getDataFromApi = async () => {
-      const response = await api.get('/volumes?q=A');
-      console.log(response.data);
-    }
-
-    getDataFromApi();
-  }, [])
 
   return (
     <div className="discoverCard-container">
@@ -28,7 +17,7 @@ export const DiscoverCard = () => {
         </div>
       </div>
       <div className="discoverCard-thumbnailContainer">
-        <img src={DELETARMOCK} alt="Just a Mock" />
+        <img src={boockMock} alt="Just a Mock" />
       </div>
     </div>
   );

@@ -1,14 +1,18 @@
 .discoverCard-container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
   padding: 17px 20px 13px 20px;
 
   background: #00173D;
-  box-shadow: 2px 4px 48px rgba(154, 175, 209, 0.62134);
   border-radius: 5px;
+  width: 272px;
+  height: 139px;
+
 
   .discoverCard-infoContainer {
+    margin-right: 52px;
+    
     h1 {
       font-family: Playfair Display;
       font-style: normal;
@@ -23,13 +27,22 @@
       color: #E7E7E1;
       margin-bottom: 35px;
       font-weight: 400;
+      font-family: SF Pro Display;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 1.28889px;
     }
 
     .discoverCard-readNow {
       display: flex;
       margin-bottom: 17px;
       gap: 3px;
-      
+      font-family: SF Pro Display;
+      font-style: normal;
+      font-size: 10px;
+      line-height: 12px;
+      letter-spacing: 0.020635px;
+            
       color: #E7E7E1;
     }
   }
