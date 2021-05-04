@@ -49,13 +49,13 @@ export const Home = () => {
 
           <div className="pageHome-currentlyReadingCard">
             <div className="pageHome-currentlyReadingCardBackground" />
-            <img src={BookImgMock} />
+            <img src={BookImgMock} alt="Currently Reading Book" />
             <div className="pageHome-currentlyReadingTitleBook">
               <h1>Originals</h1>
               <h2>by Adam Grant</h2>
 
               <div>
-                <img src={MarkedBookIcon} />
+                <img src={MarkedBookIcon} alt="Marked Book icon" />
                 Chapter
                 <strong>2</strong>
                 From 9
@@ -73,7 +73,7 @@ export const Home = () => {
           </div>
 
           <div className="pageHome-reviewsOfTheDaysCard">
-            <img src={ThumbReviewMock} />
+            <img src={ThumbReviewMock} alt="Review of the day" />
             <div>
               <h2>Don't Make Me Think - Steve Krug</h2>
               <div className="pageHome-reviewsOfTheDaysCardInfoContainer">
@@ -89,7 +89,7 @@ export const Home = () => {
         </div>
 
       </div>
-      <BottomTabNavigator page="home" />
+      <BottomTabNavigator />
     </>
   );
 }

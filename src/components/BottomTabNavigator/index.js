@@ -17,15 +17,15 @@ export const BottomTabNavigator = () => {
     <>
       <div className="bottomTabNav-container">
         <button onClick={handleClickBackToHome}>
-          <img src={HomeIcon} />
+          <img src={HomeIcon} alt="Click and go to home page" />
           <p className="bottomTabNav-activated">Home</p>
         </button>
-        <button>
-          <img src={LibrariesIcon} />
+        <button disabled>
+          <img src={LibrariesIcon} alt="Click and go to Libraries page" />
           <p>Libraries</p>
         </button>
-        <button>
-          <img src={ProfileIcon} />
+        <button disabled>
+          <img src={ProfileIcon} alt="Click and go to Profile page" />
           <p>Profile</p>
         </button>
       </div>
