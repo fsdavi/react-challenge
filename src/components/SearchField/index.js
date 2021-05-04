@@ -15,7 +15,6 @@ export const SearchField = () => {
 
   const handleSearchItemCLick = () => {
     let dataToSearchWithouSpaces = dataToSearch.replace(/\s+/g, '');
-    console.log(dataToSearchWithouSpaces);
     handleChangeSearchedBook(dataToSearch);
     history.push(`/searchResults/${dataToSearchWithouSpaces}`);
   }

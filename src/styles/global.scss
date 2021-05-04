@@ -25,27 +25,9 @@ body {
   -webkit-font-smoothing: antialised;
   font-family: SF Pro Display;
   max-width: 90%;
-  margin: 50px auto;
+  margin: 0px auto;
 }
 
 button {
   cursor: pointer;
-}
-
-::placeholder { 
-  color: #54565A;
-  opacity: 1;
-}
-
-:-ms-input-placeholder {
-  color: #54565A;
-}
-
-::-ms-input-placeholder { 
-  color: #54565A;
-}
-
-[disabled] {
-  opacity: 0.6;
-  cursor: not-allowed;
 }
