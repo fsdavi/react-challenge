@@ -1,5 +1,5 @@
 <h3 align="center">
-  ReactJS Application for Foton Challenge
+  ReactJS Application 
 </h3>
 
 <p align="center">
@@ -34,7 +34,7 @@
 
 ## 💇🏻‍♂️ About the project
 
-Project developed for the foton challenge front-end. I had to reproduce the proposed layout and increase it using the google book API.
+Project developed for a study challenge. I had to reproduce the proposed layout and increase it using the google book API.
 
 👨‍🎨 [Layout - Figma](https://www.figma.com/file/KFElqzD983WNyvMY1SaF0c/book-app?node-id=0%3A1)
 
